@@ -8,4 +8,5 @@ __1) Tutorials for learning how to use regex__
 __2) Installation Instructions__
 
 `sudo apt-get install libboost-regex-dev`
+
 `g++ -shared -fPIC regex.cpp -lboost_regex -o $QHOME/l64/regex.so`
