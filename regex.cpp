@@ -7,9 +7,6 @@
 #define KXVER 3
 #include "k.h"
 
-// sudo apt-get install libboost-regex-dev
-// g++ -shared -fPIC regex.cpp -lboost_regex -o $QHOME/l64/regex.so
-
 extern "C" {
 
 // Taken from https://code.kx.com/v2/kb/regex/
