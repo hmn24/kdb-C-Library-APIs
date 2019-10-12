@@ -16,8 +16,9 @@ _Portability is an issue, with the following defined if compiled in VSC++ with W
 `// String copy, allows portability between Visual Studio C++ and UNIX compilers`
 
 ```#if defined(WIN32) || defined(_WIN32) #define strdup _strdup #endif ```
-  
-    
+
+&nbsp;
+&nbsp;
 __2) Installation Instructions__
 
 `sudo apt-get install libboost-regex-dev`
