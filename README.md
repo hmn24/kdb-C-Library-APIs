@@ -27,4 +27,4 @@ __3) To identify what functions is under .so object defined within regex.so__
 
 Run the following commands:
 
-`nm -D --defined-only regex.so`
+`nm -D --defined-only regex.so | grep -v _`
