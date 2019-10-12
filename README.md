@@ -1,4 +1,4 @@
-# qRegex
+# kdb+ Regex + Hashing API
 Regex Boost API
 
 __1) Tutorials for learning how to use regex__
