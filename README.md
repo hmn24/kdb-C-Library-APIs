@@ -1,7 +1,6 @@
 # kdb+ Regex + Hashing API
 
 &nbsp;
-&nbsp;
 ## Regex Boost API
 
 __1) Tutorials for learning how to use Regex Boost Library__
