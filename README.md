@@ -1,7 +1,7 @@
 # kdb+ Regex + Hashing API
 ## Regex Boost API
 
-__1) Tutorials for learning how to use Regex Boost Library__
+__1)  Tutorials for learning how to use Regex Boost Library__
 
 `https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285`
   
@@ -18,7 +18,7 @@ _Portability is an issue, with the following defined if compiled in VSC++ with W
 ```#if defined(WIN32) || defined(_WIN32) #define strdup _strdup #endif ```
 
 &nbsp;  
-__2) Installation Instructions__
+__2)  Installation Instructions__
 
 `sudo apt-get install libboost-regex-dev`
 
@@ -29,12 +29,12 @@ __2) Installation Instructions__
 &nbsp;
 ## Hashing API
 
-__1) Tutorials for learning how to use Regex Boost Library__
+__1)  Tutorials for learning how to use Regex Boost Library__
 
 It can only accept strings/symbols. There are two flavours provided here in the repo, i.e. cppStdHash and cppMapHash. The former is part of the functional lib (i.e. faster though less collision-proof), while the latter unordered_map library for purposes of building hash tables (i.e. likely to be more collision-proof). 
   
 &nbsp;  
-__2) Installation Instructions__
+__2)  Installation Instructions__
 
 `g++ -shared -fPIC hash.cpp -o $QHOME/l64/hash.so`
 
