@@ -15,7 +15,8 @@ Portability is an issue, with the following defined if compiled in VSC++ with Wi
 #if defined(WIN32) || defined(_WIN32)
 #define strdup _strdup
 #endif`
-&nbsp;
+
+
 __2) Installation Instructions__
 
 `sudo apt-get install libboost-regex-dev`
@@ -30,7 +31,8 @@ __2) Installation Instructions__
 __1) Tutorials for learning how to use Regex Boost Library__
 
 It can only accept strings/symbols. There are two flavours provided here in the repo, i.e. cppStdHash and cppMapHash. The former is part of the functional lib (i.e. faster though less collision-proof), while the latter unordered_map library for purposes of building hash tables (i.e. likely to be more collision-proof). 
-&nbsp;
+
+
 __2) Installation Instructions__
 
 `g++ -shared -fPIC hash.cpp -o $QHOME/l64/hash.so`
