@@ -31,7 +31,7 @@ __2)  Installation Instructions__
 
 __1)  Tutorials for learning how to use Regex Boost Library__
 
-It can only accept strings/symbols. There are two flavours provided here in the repo, i.e. cppStdHash and cppMapHash. The former is part of the functional lib (i.e. faster though less collision-proof), while the latter unordered_map library for purposes of building hash tables (i.e. likely to be more collision-proof). 
+It can only accept strings/symbols. There are two flavours provided here in the repo, i.e. cppStdHash and cppMapHash. The former is part of the functional lib (i.e. faster though less collision-proof), while the latter from the unordered_map library that's usually used for building hash tables (i.e. likely more collision-proof). 
   
 &nbsp;  
 __2)  Installation Instructions__
