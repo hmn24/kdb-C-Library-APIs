@@ -21,3 +21,10 @@ __2) Installation Instructions__
 `sudo apt-get install libboost-regex-dev`
 
 `g++ -shared -fPIC regex.cpp -lboost_regex -o $QHOME/l64/regex.so`
+
+
+__3) To identify what functions is under .so object defined within regex.so__
+
+Run the following commands:
+
+`nm -D --defined-only regex.so`
