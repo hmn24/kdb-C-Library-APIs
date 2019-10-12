@@ -15,7 +15,9 @@ _Portability is an issue, with the following defined if compiled in VSC++ with W
 
 `// String copy, allows portability between Visual Studio C++ and UNIX compilers`
 
-```#if defined(WIN32) || defined(_WIN32) \n#define strdup _strdup \n#endif ```
+`#if defined(WIN32) || defined(_WIN32)
+#define strdup _strdup
+#endif`
 
 &nbsp;  
 __2)  Installation Instructions__
