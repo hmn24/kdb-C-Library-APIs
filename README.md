@@ -13,10 +13,11 @@ _Discussions on issues with strdup:_
   
 _Portability is an issue, with the following defined if compiled in VSC++ with Windows OS_
 
-`// String copy, allows portability between Visual Studio C++ and UNIX compilers
-#if defined(WIN32) || defined(_WIN32)
+`// String copy, allows portability between Visual Studio C++ and UNIX compilers`
+
+``#if defined(WIN32) || defined(_WIN32)
 #define strdup _strdup
-#endif`
+#endif``
   
   
   
