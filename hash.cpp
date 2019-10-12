@@ -1,20 +1,10 @@
-#include <iostream>
-#include <string.h>
 #include <unordered_map>
 #include <functional> // for hash<class template> class 
-
-#define KXVER 3
-#include "k.h"
+#include "kdbToStr.hpp"
 
 typedef std::unordered_map<std::string,std::string> stringmap;
 
 extern "C" {
-
-// Taken from https://code.kx.com/v2/kb/regex/
-Z __inline S c2s(S s,J n){S r=(S)malloc(n+1);R r?memcpy(r,s,n),r[n]=0,r:(S)krr((S)"wsfull");}
-
-// Converts a kdb+ sym or string to a C string (with thanks to Kevin Smyth)
-static S kdb2str(K kdbStr) {return kdbStr->t == -KS ? kdbStr->s : c2s((S) kC(kdbStr), kdbStr->n);}
 
 // C++ UnorderedMap Hash Function from http://www.cplusplus.com/reference/unordered_map/unordered_map/hash_function/
 K cppMapHash(K input) {
