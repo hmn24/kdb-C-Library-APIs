@@ -27,6 +27,10 @@ __2) Installation Instructions__
 
 
 
+
+
+
+
 ## Hashing API
 
 __1) Tutorials for learning how to use Regex Boost Library__
@@ -37,6 +41,8 @@ It can only accept strings/symbols. There are two flavours provided here in the 
 __2) Installation Instructions__
 
 `g++ -shared -fPIC hash.cpp -o $QHOME/l64/hash.so`
+
+
 
 
 
