@@ -25,12 +25,12 @@ __2) Installation Instructions__
 
 `g++ -shared -fPIC regex.cpp -lboost_regex -o $QHOME/l64/regex.so`
 
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
 ## Hashing API
 
 __1) Tutorials for learning how to use Regex Boost Library__
@@ -42,10 +42,10 @@ __2) Installation Instructions__
 
 `g++ -shared -fPIC hash.cpp -o $QHOME/l64/hash.so`
 
-
-
-
-
+ 
+ 
+ 
+ 
 ## Identify Functions Under Shared Objects
 
 Run the following example command:
