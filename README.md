@@ -10,6 +10,7 @@ _Discussions on issues with strdup:_
 `https://stackoverflow.com/questions/12984948/why-is-strdup-considered-to-be-evil`
 
 Portability is an issue, with the following defined if compiled in VSC++ with Windows OS
+
 `// String copy, allows portability between Visual Studio C++ and UNIX compilers
 #if defined(WIN32) || defined(_WIN32)
 #define strdup _strdup
