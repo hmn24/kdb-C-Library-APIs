@@ -6,7 +6,7 @@ extern "C" {
 // Regex match function
 K regexMatch(K input, K expr) {
     
-    P(!((input->t == -KS) || (input->t == KC)), krr((S) "type")); // Check the types
+    P(!(input->t == -KS || input->t == KC), krr((S) "type")); // Check the types
     P(expr->t != KC, krr((S) "type"));     
     
     try {

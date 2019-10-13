@@ -3,6 +3,7 @@
 #include "kdbToStr.hpp"
 
 typedef std::unordered_map<std::string,std::string> stringmap;
+stringmap mymap;
 
 extern "C" {
 
@@ -11,10 +12,17 @@ K cppMapHash(K input) {
         
     P(!(input->t == -KS || input->t == KC), krr((S) "type")); // Check the types
 
-    stringmap mymap;
-    stringmap::hasher fn = mymap.hash_function();
+    try {return kj((J) mymap.hash_function()(kdb2str(input)));} 
+    catch (std::exception &e) {return krr((S) e.what());}
+ }
 
-    try {return kj((J) fn(kdb2str(input)));} 
+// Check that the hashes from unordered_map are equivalent 
+K cppMapHashEquals(K expr_one, K expr_two) {
+        
+    P(!(expr_one->t == -KS || expr_one->t == KC), krr((S) "type")); // Check the types
+    P(!(expr_two->t == -KS || expr_two->t == KC), krr((S) "type")); // Check the types
+
+    try {return kb((I) mymap.key_eq()(kdb2str(expr_one), kdb2str(expr_two)));} 
     catch (std::exception &e) {return krr((S) e.what());}
  }
 
