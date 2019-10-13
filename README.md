@@ -1,4 +1,4 @@
-# kdb+ Regex + Hashing API
+# kdb+/C++ Library APIs 
 ## Regex Boost API
 
 __1)  Tutorials for learning how to use Regex Boost Library__
