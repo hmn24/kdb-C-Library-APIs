@@ -18,7 +18,7 @@ F getVal(K x){
 
 K hypotCPP(K x, K y) {
     try {
-        R kf(fdim(getVal(x), getVal(y)));
+        R kf(hypot(getVal(x), getVal(y)));
     } 
     catch (const char* &param) {
         R krr((S) param);
