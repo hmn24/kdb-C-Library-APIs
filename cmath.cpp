@@ -7,12 +7,12 @@
 extern "C" {
 
 F getVal(K x){    
-    if(xt == -KB) {R (F) x->g;}
-    if(xt == -KH) {R (F) x->h;}
-    if(xt == -KI || xt == -KM || xt == -KD || xt == -KU || xt == -KV || xt == -KT) {R (F) x->i;}
-    if(xt == -KJ || xt == -KP || xt == -KN) {R (F) x->j;}
-    if(xt == -KE) {R (F) x->e;}
-    if(xt == -KF) {R (F) x->f;}
+    P(xt == -KB, (F)x->g);
+    P(xt == -KH, (F)x->h);
+    P(xt == -KI || xt == -KM || xt == -KD || xt == -KU || xt == -KV || xt == -KT, (F)x->i);
+    P(xt == -KJ || xt == -KP || xt == -KN, (F)x->j);
+    P(xt == -KE, (F)x->e);
+    P(xt == -KF, (F)x->f);
     throw("TYPE");
  }
 
