@@ -4,7 +4,7 @@
 #define KXVER 3
 #include "k.h"
 
-#define tryCatch(x) try{R x;} catch(const char* &p) {R krr((S)p);} 
+#define tryCatch(x) try{R x;} catch(const char* &p) {R krr((S) p);} 
 
 extern "C" {
 
