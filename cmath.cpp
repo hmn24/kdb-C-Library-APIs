@@ -4,6 +4,8 @@
 #define KXVER 3
 #include "k.h"
 
+#define tryCatch(x) try{R x;} catch(const char* &p) {R krr((S)p);} 
+
 extern "C" {
 
 F getVal(K x){    
@@ -17,39 +19,19 @@ F getVal(K x){
  }
 
 K hypotCPP(K x, K y) {
-    try {
-        R kf(hypot(getVal(x), getVal(y)));
-    } 
-    catch (const char* &param) {
-        R krr((S) param);
-    }
+    tryCatch(kf(hypot(getVal(x), getVal(y))));
  }
 
 K fdimCPP(K x, K y) {
-    try {
-        R kf(fdim(getVal(x), getVal(y)));
-    } 
-    catch (const char* &param) {
-        R krr((S) param);
-    }
+    tryCatch(kf(fdim(getVal(x), getVal(y))));
  }
 
 K erfCPP(K x) {
-    try {
-        R kf(erf(getVal(x)));
-    } 
-    catch (const char* &param) {
-        R krr((S) param);
-    }
+    tryCatch(kf(erf(getVal(x))));
  }
 
 K tgammaCPP(K x) {
-    try {
-        R kf(tgamma(getVal(x)));
-    } 
-    catch (const char* &param) {
-        R krr((S) param);
-    }
+    tryCatch(kf(tgamma(getVal(x))));
  }
 
 }
