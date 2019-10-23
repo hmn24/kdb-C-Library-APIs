@@ -4,7 +4,8 @@
 __1)  Tutorials for learning how to use Regex Boost Library__
 
 `https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285`
-  
+
+`https://theboostcpplibraries.com/boost.regex`  
   
 _Discussions on issues with strdup:_
 
