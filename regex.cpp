@@ -1,6 +1,8 @@
 #include <boost/regex.hpp>
 #include "kdbToStr.hpp"
 
+#define catchP catch(std::exception &e) {R krr(strdup(e.what()));} 
+
 extern "C" {
 
 // Regex match function
@@ -11,9 +13,8 @@ K regexMatch(K input, K expr) {
     
     try {
         return kb((bool) boost::regex_match(kdb2str(input), boost::regex {kdb2str(expr)}));
-    } catch (std::exception &e) {
-        return krr(strdup(e.what()));
-    }
+    } catchP
+
  }
 
 // Regex search function
@@ -26,9 +27,8 @@ K regexSearch(K input, K expr) {
 
     try {
         return boost::regex_search(std::string(kdb2str(input)), what, boost::regex{kdb2str(expr)}) ? kp((S) what.str().c_str()) : kp((S) "");
-    } catch (std::exception &e) {
-        return krr(strdup(e.what()));
-    }
+    } catchP
+
  }
 
 // Regex replace function
@@ -39,9 +39,7 @@ K regexReplace(K input, K expr, K replace) {
     try {
         std::string op = boost::regex_replace(std::string(kdb2str(input)), boost::regex{kdb2str(expr)}, std::string(kdb2str(replace)));
         return kp((S) op.c_str());
-    } catch (std::exception &e) {
-        return krr(strdup(e.what()));
-    }
+    } catchP
 
  }
 
